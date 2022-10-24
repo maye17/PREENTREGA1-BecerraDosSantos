@@ -27,7 +27,16 @@ do {
         //Ingresar opción
 
         opcion =  parseInt (prompt ("Qué parrilla desea comprar: \n 1.- Parrilla Super Junquito, precio: $5500 \n 2.-Parrilla del Mar, Precio: $3500  \n 3.- Parrilla Kids, precio: $1800 \n 4.- Parrilla para Dos, precio: $3600"));
+
+        //validando opcion repetido
    
+        if (flag=="Y"){
+            if(opcionActual==opcion){
+                alert(`Usted ya ha elegido está opción ${opcion}`);
+                continue;  
+            }
+                   
+        }
 
   console.log (`valor de opcion: ${opcion}`);
 
@@ -136,7 +145,6 @@ flag =
 prompt (`¿Quiere pedir otro plato? Y/N`);
 console.log ("flag", flag);
 opcionActual = opcion;
-
 console.log (`valor de opcion: ${opcionActual}`);
 
 
